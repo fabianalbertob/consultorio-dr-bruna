@@ -26,7 +26,7 @@ def get_image_base64(image_path: str) -> str:
     mime = f"image/{'jpeg' if ext == 'jpg' else ext}"
     return f"data:{mime};base64,{encoded}"
 
-# Buscar doctor.jpg, doctor.png, doctor.jpeg, etc.
+# Buscar doctor.jpg, doctor.jpeg, doctor.png, etc.
 _ruta_doctor = None
 for patron in ["doctor.jpg", "doctor.jpeg", "doctor.png", "doctor.webp"]:
     candidato = Path(__file__).parent / patron
@@ -211,23 +211,21 @@ html_code = f"""
             margin-bottom: 8px;
             font-weight: 500;
         }}
-        select, input[type="date"], input[type="text"] {{
-            width: 100%;
-            padding: 14px;
-            margin-bottom: 20px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        .booking-info {{
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
             border-radius: 8px;
-            color: #fff;
-            font-family: var(--font-sans);
-            font-size: 0.95rem;
-            outline: none;
-            transition: border-color 0.3s;
+            padding: 15px;
+            margin-bottom: 20px;
         }}
-        select:focus, input:focus {{
-            border-color: var(--gold);
+        .booking-info p {{
+            color: var(--text-light);
+            margin-bottom: 10px;
+            font-size: 0.9rem;
         }}
-        option {{ background: var(--bg-dark); color: #fff; }}
+        .booking-info p:last-child {{
+            margin-bottom: 0;
+        }}
         .btn-gold {{
             width: 100%;
             padding: 16px;
@@ -241,10 +239,26 @@ html_code = f"""
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
             box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
         }}
         .btn-gold:hover {{ 
             transform: translateY(-2px); 
             box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+        }}
+        .btn-disabled {{
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-muted);
+            font-family: var(--font-sans);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: not-allowed;
+            opacity: 0.5;
         }}
         .info-grid {{
             display: grid;
@@ -437,30 +451,25 @@ html_code = f"""
 
         <div class="booking-card">
             <h2 style="font-family: var(--font-serif); text-align: center; margin-bottom: 25px; color: #fff;">Reservar Turno</h2>
-            <label class="form-label">Especialidad / Tema de Consulta</label>
-            <select>
-                <option>Diabetes</option>
-                <option>Obesidad</option>
-                <option>Dislipemia (Colesterol/Triglicéridos)</option>
-                <option>Hipertensión Arterial (HTA)</option>
-                <option>Sarcopenia</option>
-                <option>Osteoporosis</option>
-                <option>Medicina General</option>
-                <option>Consulta Online</option>
-            </select>
-            <label class="form-label">Fecha Preferida</label>
-            <input type="date">
-            <label class="form-label">Nombre Completo</label>
-            <input type="text" placeholder="Ingrese su nombre y apellido">
-            <label class="form-label">Teléfono de Contacto</label>
-            <input type="text" placeholder="Ej: 3876112742">
-            <button class="btn-gold" onclick="alert('¡Gracias por su consulta! Lo contactaremos a la brevedad para confirmar el turno.')">SOLICITAR TURNO</button>
+            
+            <div class="booking-info">
+                <p>📍 <strong>Consulta en Salta - Cardiomed</strong></p>
+                <p>📅 Horarios: Lunes a Viernes 14:00 - 17:00</p>
+                <p>🏥 Dirección: Ameghino 243, Salta</p>
+                <p style="color: var(--gold); margin-top: 10px;">
+                    <em>Próximamente: Campo Quijano y Consulta Online</em>
+                </p>
+            </div>
+            
+            <a href="https://calendar.app.google/1qaDYyotnpVG1Ens6" target="_blank" class="btn-gold">
+                RESERVAR TURNO EN SALTA
+            </a>
         </div>
 
         <h2 class="section-title">Información de Consulta</h2>
         <div class="info-grid">
             <div class="info-card">
-                <h3>📍 Direcciones</h3>
+                <h3> Direcciones</h3>
                 <ul>
                     <li><strong>Salta:</strong> Ameghino 243 - Cardiomed<br>
                     <em>Lunes a Viernes: 14-17 HS</em></li>
