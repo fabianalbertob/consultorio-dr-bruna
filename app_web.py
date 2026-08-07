@@ -531,6 +531,13 @@ html_code = f"""
                 <div class="play-overlay"><div class="play-icon"></div></div>
                 <div class="video-title">Consejos para Viajar</div>
             </div>
+            <div class="video-card" onclick="toggleVideo(this)">
+                <video loop muted playsinline>
+                    <source src="videos/prostata.mp4" type="video/mp4">
+                </video>
+                <div class="play-overlay"><div class="play-icon"></div></div>
+                <div class="video-title">Cáncer de Próstata</div>
+            </div>
         </div>
 
         <h2 class="section-title">Seguime en Redes</h2>
