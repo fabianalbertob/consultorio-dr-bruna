@@ -538,6 +538,20 @@ html_code = f"""
                 <div class="play-overlay"><div class="play-icon"></div></div>
                 <div class="video-title">Cáncer de Próstata</div>
             </div>
+            <div class="video-card" onclick="toggleVideo(this)">
+                <video loop muted playsinline>
+                    <source src="videos/sismo-salta.mp4" type="video/mp4">
+                </video>
+                <div class="play-overlay"><div class="play-icon"></div></div>
+                <div class="video-title">Prevención Sísmica en Salta</div>
+            </div>
+            <div class="video-card" onclick="toggleVideo(this)">
+                <video loop muted playsinline>
+                    <source src="videos/sifilis-prevencion.mp4" type="video/mp4">
+                </video>
+                <div class="play-overlay"><div class="play-icon"></div></div>
+                <div class="video-title">Prevención de la Sífilis</div>
+            </div>
         </div>
 
         <h2 class="section-title">Seguime en Redes</h2>
