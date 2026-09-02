@@ -559,7 +559,7 @@ html_code = f"""
             <p style="margin-bottom: 20px;">Seguime en mis redes sociales para más consejos de salud</p>
             <div class="social-links">
                 <a href="https://facebook.com/fabian.bruna.perez" target="_blank">📘 Facebook</a>
-                <a href="https://instagram.com/fabian.bruna.perez" target="_blank">📷 Instagram</a>
+                <a href="https://www.instagram.com/fabianbrunaperez/" target="_blank">📷 Instagram</a>
             </div>
         </div>
 
