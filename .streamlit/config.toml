@@ -1,8 +1,0 @@
-[server]
-# Sirve la carpeta ./static por HTTP (los videos educativos de la pagina).
-# Sin esto, Streamlit responde la pagina HTML a CUALQUIER ruta (incluso /videos/x.mp4)
-# y el navegador recibe HTML en vez del video -> no reproduce.
-enableStaticServing = true
-
-[browser]
-gatherUsageStats = false

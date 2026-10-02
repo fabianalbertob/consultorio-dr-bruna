@@ -512,42 +512,42 @@ html_code = f"""
         <div class="video-grid">
             <div class="video-card" onclick="toggleVideo(this)">
                 <video loop muted playsinline>
-                    <source src="app/static/agua.mp4" type="video/mp4">
+                    <source src="https://fabianalbertob.github.io/consultorio-dr-bruna/static/agua.mp4" type="video/mp4">
                 </video>
                 <div class="play-overlay"><div class="play-icon"></div></div>
                 <div class="video-title">Importancia del Agua</div>
             </div>
             <div class="video-card" onclick="toggleVideo(this)">
                 <video loop muted playsinline>
-                    <source src="app/static/ejercicios.mp4" type="video/mp4">
+                    <source src="https://fabianalbertob.github.io/consultorio-dr-bruna/static/ejercicios.mp4" type="video/mp4">
                 </video>
                 <div class="play-overlay"><div class="play-icon"></div></div>
                 <div class="video-title">Ejercicios para la Salud</div>
             </div>
             <div class="video-card" onclick="toggleVideo(this)">
                 <video loop muted playsinline>
-                    <source src="app/static/viajar.mp4" type="video/mp4">
+                    <source src="https://fabianalbertob.github.io/consultorio-dr-bruna/static/viajar.mp4" type="video/mp4">
                 </video>
                 <div class="play-overlay"><div class="play-icon"></div></div>
                 <div class="video-title">Consejos para Viajar</div>
             </div>
             <div class="video-card" onclick="toggleVideo(this)">
                 <video loop muted playsinline>
-                    <source src="app/static/prostata.mp4" type="video/mp4">
+                    <source src="https://fabianalbertob.github.io/consultorio-dr-bruna/static/prostata.mp4" type="video/mp4">
                 </video>
                 <div class="play-overlay"><div class="play-icon"></div></div>
                 <div class="video-title">Cáncer de Próstata</div>
             </div>
             <div class="video-card" onclick="toggleVideo(this)">
                 <video loop muted playsinline>
-                    <source src="app/static/sismo-salta.mp4" type="video/mp4">
+                    <source src="https://fabianalbertob.github.io/consultorio-dr-bruna/static/sismo-salta.mp4" type="video/mp4">
                 </video>
                 <div class="play-overlay"><div class="play-icon"></div></div>
                 <div class="video-title">Prevención Sísmica en Salta</div>
             </div>
             <div class="video-card" onclick="toggleVideo(this)">
                 <video loop muted playsinline>
-                    <source src="app/static/sifilis-prevencion.mp4" type="video/mp4">
+                    <source src="https://fabianalbertob.github.io/consultorio-dr-bruna/static/sifilis-prevencion.mp4" type="video/mp4">
                 </video>
                 <div class="play-overlay"><div class="play-icon"></div></div>
                 <div class="video-title">Prevención de la Sífilis</div>
